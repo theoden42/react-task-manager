@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Button = (props) => {
+const Button = ({ text, color, onAddbtn }) => {
 
   return (
-    <button style={{backgroundColor: props.color}} className='btn' onClick={props.onClickevent}>
-        {props.text}
+    <button style={{backgroundColor: color}} className='btn' onClick={onAddbtn}>
+        {text}
     </button>
   )
 }
