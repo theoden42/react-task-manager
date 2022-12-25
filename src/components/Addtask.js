@@ -18,6 +18,10 @@ const Addtask = ({ createTask }) => {
 
   const submitForm = (e) =>{
     e.preventDefault();
+    if(!title || !day){
+        alert('Please Enter values in the field');
+        return;
+    }
     createTask(title, day, reminder);
   }
 
